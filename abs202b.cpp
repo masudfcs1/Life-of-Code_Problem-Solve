@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define e         "\n"
+#define ll        long long int
+#define ul        unsigned long long int
+#define fr(i,n)   for(int i=0;i<n;i++)
+#define pct(i)    cout<<"Case "<<i<<": ";
+#define fast      ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+
+int main()
+{
+	string s; cin>>s;
+	reverse(s.begin(),s.end());
+	for(const auto c: s){
+		if(c=='6') cout<<9;
+		else if(c=='9') cout<<6;
+		else
+		   cout<<c;
+	}
+	
+	//cout<<s<<e;
+
+
+    return 0;
+}
+
